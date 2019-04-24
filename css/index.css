@@ -74,16 +74,18 @@ body {
 	border-radius: 2px;
 }
 
-.dl-step-3 .index {
+.dl-step-2 {margin-bottom: 58px;}
+
+.dl-step-2 .index, .dl-step-3 .index {
 	background-color: rgba(39, 41, 57, 0.2);
 }
 
-.dl-step-3 .content {
+.dl-step-2 .content, .dl-step-3 .content {
 	background-color: rgba(255, 255, 255, 0.9);
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-.dl-step-3 .content .tip {
+.dl-step-2 .content .tip, .dl-step-3 .content .tip {
 	margin-bottom: 2px;
 	font-size: 15px;
 	color: #333;
@@ -137,7 +139,19 @@ body {
 	background-position: center -131px;
 }
 
-.dl-step-3 .app {
+.dl-step-2 .index:before {
+	content: "";
+	display: block;
+	height: 128px;
+	width: 2px;
+	background-color: #fff;
+	position: absolute;
+	top: 45px;
+	left: 17px;
+	border-radius: 2px;
+}
+
+.dl-step-2 .app, .dl-step-3 .app {
 	display: flex;
 	justify-content: flex-start;
 	flex-wrap: nowrap;
@@ -196,7 +210,7 @@ body {
 	font-weight: bold;
 }
 
-.pic{
+.pic {
 	height: 30px;
 	width: 30px;
 }
