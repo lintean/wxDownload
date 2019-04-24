@@ -52,11 +52,12 @@
 			// 微信
 			if (ua.indexOf("MicroMessenger") > -1) {
 				console.log("在微信中打开");
+				return;
 			}
 			if (ua.indexOf('Android') > -1 || ua.indexOf('Linux') > -1) { //安卓手机              
 				location.href = appUrl;
 			} else if (ua.indexOf('iPhone') > -1) { //苹果手机              
-				console.log("苹果手机");
+				alert("请使用安卓手机浏览");
 			}
 		}
 		
