@@ -4,9 +4,6 @@ body {
 
 .container {
 	padding: 0 20px;
-	background-image: url(images/bg.jpg);
-	background-position: center center;
-	background-size: 100% 100%;
 	height: 100%;
 }
 
@@ -62,10 +59,6 @@ body {
 	position: absolute;
 	right: 0;
 	top: -56px;
-	background-image: url(images/icons.png);
-	background-size: auto 213px;
-	background-repeat: no-repeat;
-	background-position: 0 0;
 	z-index: 10;
 }
 
@@ -81,22 +74,15 @@ body {
 	border-radius: 2px;
 }
 
-.dl-step-2 {
-	margin-bottom: 58px;
-}
-
-.dl-step-2 .index,
 .dl-step-3 .index {
 	background-color: rgba(39, 41, 57, 0.2);
 }
 
-.dl-step-2 .content,
 .dl-step-3 .content {
 	background-color: rgba(255, 255, 255, 0.9);
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-.dl-step-2 .content .tip,
 .dl-step-3 .content .tip {
 	margin-bottom: 2px;
 	font-size: 15px;
@@ -104,17 +90,7 @@ body {
 	font-family: Microsoft Yahei;
 }
 
-.dl-step-2 .index:before {
-	content: "";
-	display: block;
-	height: 128px;
-	width: 2px;
-	background-color: #fff;
-	position: absolute;
-	top: 45px;
-	left: 17px;
-	border-radius: 2px;
-}
+
 
 .dl-devices {
 	overflow: hidden;
@@ -122,7 +98,7 @@ body {
 
 .dl-devices .item {
 	background-color: #ceecfb;
-	width: 49%;
+	width: 100%;
 	float: left;
 	padding: 5px 0;
 }
@@ -144,9 +120,6 @@ body {
 .dl-devices .icon {
 	height: 40px;
 	clear: left;
-	background-image: url(images/icons1.png);
-	background-size: auto 213px;
-	background-repeat: no-repeat;
 }
 
 .dl-devices .desc {
@@ -165,21 +138,20 @@ body {
 }
 
 .dl-step-3 .app {
-	background-color: #ceecfb;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: nowrap;
 	padding: 8px 25px;
 }
 
 .dl-step-3 .app .icon {
-	padding-left: 38px;
+	padding-left: 10px;
 	height: 31px;
 	line-height: 31px;
-	background-image: url(images/icons2.png);
-	background-repeat: no-repeat;
-	background-position: -29px -182px;
-	background-size: auto 213px;
-	font-size: 10px;
+	font-size: 15px;
 	color: #666;
 	font-family: Microsoft Yahei;
+	font-weight: bold;
 }
 
 .dl-step .content:before {
@@ -212,4 +184,19 @@ body {
 .dl-step-2 .content:after,
 .dl-step-3 .content:after {
 	border-right-color: rgba(255, 255, 255, 0.9);
+}
+
+#world {
+	padding-left: 10px;
+	height: 31px;
+	line-height: 31px;
+	font-size: 15px;
+	color: #666;
+	font-family: Microsoft Yahei;
+	font-weight: bold;
+}
+
+.pic{
+	height: 30px;
+	width: 30px;
 }
