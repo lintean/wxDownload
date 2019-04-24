@@ -2,8 +2,10 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
 	</head>
 	<body>
 		<div class="container">
@@ -39,12 +41,14 @@
 	</body>
 
 	<script type="text/javascript">
-		var init = function (){
+		var init = function() {
 			var ua = navigator.userAgent;
-			var appUrl = "http://www.micerlabs.com/practice-points/docs/liweijian/app-release.apk";
+			var appUrl = "http://oss.micerlabs.com/practice-points/docs/liweijian/app-release.apk";
 			// 电脑端
-			var isPC = !/(iphone|ios|android|mini|mobile|mobi|Nokia|Symbian|iPod|iPad|Windows\s+Phone|MQQBrowser|wp7|wp8|UCBrowser7|UCWEB|360\s+Aphone\s+Browser)/i.test(ua);
-			if (isPC) { 
+			var isPC = !
+				/(iphone|ios|android|mini|mobile|mobi|Nokia|Symbian|iPod|iPad|Windows\s+Phone|MQQBrowser|wp7|wp8|UCBrowser7|UCWEB|360\s+Aphone\s+Browser)/i
+				.test(ua);
+			if (isPC) {
 				alert("请使用安卓手机浏览");
 				return;
 			}
@@ -60,8 +64,7 @@
 				alert("请使用安卓手机浏览");
 			}
 		}
-		
+
 		document.onreadystatechange = init;
-		
 	</script>
 </html>
