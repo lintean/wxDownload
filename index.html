@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<div class="container">
+			<div class="dl-step">
+				<div class="step dl-step-1">
+					<div class="index">1</div>
+					<div class="content">点击右上方</div>
+				</div>
+				<div class="step dl-step-2">
+					<div class="index">2</div>
+					<div class="content">
+						<p class="tip">选择在浏览器中打开</p>
+						<div class="dl-devices">
+							<div class="item android">
+								<span class="name">安卓</span>
+								<div class="icon"></div>
+								<p class="desc">在浏览器中打开</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="step dl-step-3">
+					<div class="index">3</div>
+					<div class="content">
+						<p class="tip">即可自动下载APP</p>
+						<div class="app">
+							<div class="icon">智慧建筑客户端</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<script type="text/javascript">
+		var init = function (){
+			var ua = navigator.userAgent;
+			var appUrl = "http://www.micerlabs.com/practice-points/docs/liweijian/app-release.apk";
+			// 电脑端
+			var isPC = !/(iphone|ios|android|mini|mobile|mobi|Nokia|Symbian|iPod|iPad|Windows\s+Phone|MQQBrowser|wp7|wp8|UCBrowser7|UCWEB|360\s+Aphone\s+Browser)/i.test(ua);
+			if (isPC) { 
+				alert("请使用安卓手机浏览");
+				return;
+			}
+
+			// 微信
+			if (ua.indexOf("MicroMessenger") > -1) {
+				console.log("在微信中打开");
+			}
+			if (ua.indexOf('Android') > -1 || ua.indexOf('Linux') > -1) { //安卓手机              
+				location.href = appUrl;
+			} else if (ua.indexOf('iPhone') > -1) { //苹果手机              
+				console.log("苹果手机");
+			}
+		}
+		
+		document.onreadystatechange = init;
+		
+	</script>
+</html>
