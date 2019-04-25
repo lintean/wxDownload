@@ -155,7 +155,8 @@ body {
 	display: flex;
 	justify-content: flex-start;
 	flex-wrap: nowrap;
-	padding: 8px 25px;
+	padding: 8px 15px;
+	height: 31px;
 }
 
 .dl-step-3 .app .icon {
