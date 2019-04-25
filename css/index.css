@@ -30,7 +30,7 @@ body {
 }
 
 .dl-step .content {
-	margin-left: 70px;
+	margin-left: 60px;
 	border-radius: 4px;
 	padding: 8px 13px 13px;
 	position: relative;
@@ -155,7 +155,7 @@ body {
 	display: flex;
 	justify-content: flex-start;
 	flex-wrap: nowrap;
-	padding: 8px 15px;
+	padding: 8px 10px;
 	height: 31px;
 }
 
@@ -212,6 +212,9 @@ body {
 }
 
 .pic {
-	height: 30px;
-	width: 30px;
+    height: 25px;
+    width: 25px;
+    top: 3px;
+    position: relative;
+    display: inline-block;
 }
